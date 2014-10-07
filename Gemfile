@@ -45,8 +45,7 @@ end
 
 gem 'devise'
 
-gem :development, :test do
-  gem 'rspec-rails'
+group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda-matchers'
   gem 'pry-rails'
