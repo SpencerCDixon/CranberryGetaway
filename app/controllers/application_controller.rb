@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   
   def admin_authorize!
     if !current_user.admin?
-      flash[:warning] = "Invalid request"
+      flash[:notice] = "Invalid request"
       redirect_to root_path
     end
   end

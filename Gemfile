@@ -44,6 +44,8 @@ group :development, :test do
 end
 
 gem 'devise'
+gem 'simple_form'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'valid_attribute'

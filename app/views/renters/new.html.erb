@@ -1,0 +1,15 @@
+<div class="row">
+  <h1 id="add_renter">Add Renter</h1>
+
+  <%= simple_form_for @renter do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <%= f.input :start_date, as: :date %>
+    <%= f.input :end_date, as: :date %>
+    <%= f.input :description %>
+    <%= f.button :submit %>
+  <% end %>
+
+</div>
