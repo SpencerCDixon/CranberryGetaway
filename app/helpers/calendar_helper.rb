@@ -37,6 +37,11 @@ module CalendarHelper
       classes = []
       classes << "today" if day == Date.today
       classes << "notmonth" if day.month != date.month
+      Renter.all.each do |renter|
+        if renter.start_date <= day && renter.end_date >= day
+          classes << "taken"
+        end
+      end
       classes.empty? ? nil : classes.join(" ")
     end
 

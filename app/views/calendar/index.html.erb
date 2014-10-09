@@ -1,3 +1,4 @@
+<div class="row">
 <div id="articles">
   <h2 id="month">
     <%= link_to "<", date: @date.prev_month %>
@@ -7,4 +8,5 @@
   <%= calendar @date do |date| %>
     <%= date.day %>
   <% end %>
+</div>
 </div>
