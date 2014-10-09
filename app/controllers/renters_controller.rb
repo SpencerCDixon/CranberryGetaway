@@ -17,6 +17,7 @@ class RentersController < ApplicationController
     @renter = Renter.new(renter_params)
 
     if @renter.save
+      flash[:notice] = 'Renter successfully created.'
       redirect_to @renter
     else
       render 'new'
