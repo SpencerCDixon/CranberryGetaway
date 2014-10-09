@@ -1,1 +1,22 @@
-<h1> <%= @renter.first_name %> </h1>
+<div class="row">
+  <h1> <%= @renter.first_name %>'s Renter Profile </h1>
+    <table> 
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+      </tr>
+      <tr>
+          <td> <%= @renter.first_name %> </td>
+          <td> <%= @renter.last_name %> </td>
+          <td> <%= @renter.email %> </td>
+          <td> <%= @renter.phone  %> </td>
+          <td> <%= @renter.start_date %> </td>
+          <td> <%= @renter.end_date  %> </td>
+      </tr>
+    </table>
+  <%= link_to 'Update Rental Date', edit_renter_path(@renter), class:"button tiny"  %>
+</div>
