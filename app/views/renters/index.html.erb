@@ -1,3 +1,19 @@
 <div class="row">
-  <h1 id="add_renter">All Renter</h1>
+  <h1 id="add_renter">All Renters</h1>
+  <% @renters.each do |renter| %>
+    <table> 
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+      <tr>
+          <td> <%= link_to renter.first_name, renter_path(renter) %> </td>
+          <td> <%= renter.last_name %> </td>
+          <td> <%= renter.email %> </td>
+          <td> <%= renter.phone  %> </td>
+      </tr>
+    </table>
+  <% end %>
 </div>

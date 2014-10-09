@@ -46,6 +46,7 @@ end
 gem 'devise'
 gem 'simple_form'
 gem 'foundation-rails'
+gem 'high_voltage'
 
 group :development, :test do
   gem 'valid_attribute'
