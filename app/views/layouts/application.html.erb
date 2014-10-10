@@ -14,7 +14,7 @@
   <body>
 
      <div class="container">
-      <%= render 'layouts/nav' %>
+        <%= render 'layouts/nav' %>
 
         <% flash.each do |name, msg| %>
           <div class="alert-box <%= name %>">
@@ -24,7 +24,6 @@
 
        <%= yield %>
      </div>
-     
     <%= javascript_include_tag "application" %>
   </body>
 </html>
