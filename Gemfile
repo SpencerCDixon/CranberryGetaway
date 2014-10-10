@@ -47,6 +47,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'foundation-rails'
 gem 'high_voltage'
+gem 'owlcarousel-rails'
 
 group :development, :test do
   gem 'valid_attribute'

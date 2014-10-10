@@ -15,11 +15,12 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
+ $(function(){ $(document).foundation(); });
 
-$(function(){ $(document).foundation(); });
   $(document).foundation({
     tab: {
       callback : function (tab) {
         console.log(tab);
       }
     }
+  }); 
