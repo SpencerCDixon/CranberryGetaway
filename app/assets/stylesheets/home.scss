@@ -1,0 +1,30 @@
+.home-image {
+  background-image:url('https://s3.amazonaws.com/mytopia-production/cranberry/bottles.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.name h1 a{
+  font-size: 2em;
+  color: black !important;
+}
+
+.testimonial, .tagline {
+  padding: 1em;
+  border: 1px solid black;
+  background: #ccc;
+  margin-top: 10%;
+}
+
+.testimonial p {
+  font-size: 1em;
+  font-style: italic;
+}
+.tagline  {
+  h1 {
+    text-align: center;
+    margin-bottom: 1.4em;
+  }
+}
+  
